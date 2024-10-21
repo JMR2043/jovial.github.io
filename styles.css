@@ -1,0 +1,164 @@
+body, header, nav, main, footer, h1, div, img, ul {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+body {
+    background-color: white;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+header {
+    background-color: #00a8cc;
+    color: black;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+footer .copyright {
+    background-color: #00a8cc;
+    color: black;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+footer .social-icons {
+    margin-top: 10px;
+    width: 50%;
+    height: 50%;
+}
+
+footer .social-icons a img {
+    width: 20px;
+    margin: 0 10px;
+}
+
+/* Explore Section */
+.explore {
+    background-color: #b2ebf2;
+    padding: 20px;
+    text-align: center;
+}
+
+.destinations-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.destination img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.destination p {
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Contact Section */
+.contact {
+    background-image: url('contact_background.jpg');
+    background-size: cover;
+    padding: 100px 20px;
+    text-align: center;
+    color: black;
+    font-size: 1.5em;
+}
+
+#contact h2 {
+    text-align: center;
+}
+
+/* Itinerary Form */
+.itinerary-form {
+    padding: 20px;
+    text-align: center;
+}
+
+.itinerary-form form input, 
+.itinerary-form form textarea {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.itinerary-form form button {
+    padding: 10px 20px;
+    background-color: #00a8cc;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Message Section */
+.message {
+    padding: 50px;
+    text-align: center;
+}
+
+/* Responsive Media Queries */
+@media screen and (max-width: 1024px) {
+    .destinations-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .destinations-grid {
+        grid-template-columns: 1fr;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    footer {
+        font-size: 0.8em;
+    }
+}
